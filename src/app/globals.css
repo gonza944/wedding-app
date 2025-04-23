@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Wedding color palette */
+  --olive-green: #4C4727;
+  --dark-brown: #433101;
+  --taupe: #A09278;
+  --sand: #E4C5A6;
+  --rust: #8C3712;
 }
 
 @theme inline {
@@ -10,6 +17,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-title: var(--font-bodoni-moda);
+  --font-body: var(--font-raleway);
+  
+  --color-olive-green: var(--olive-green);
+  --color-dark-brown: var(--dark-brown);
+  --color-taupe: var(--taupe);
+  --color-sand: var(--sand);
+  --color-rust: var(--rust);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +37,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title), serif;
 }
